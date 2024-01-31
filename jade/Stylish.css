@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    height: 1000px;
+    position: relative;
+   }
+
+.Container{
+    height: 481px; 
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 252, 46, 0.522);
+    color:palevioletred;
+    position: relative;
+    border: solid 2px black;
+    float:center;
+}
+#Jade{
+    border: solid saddlebrown;
+    border-radius: 50%;
+    height: auto; 
+    width: 17%;
+    position:absolute;
+    top: 20%;
+    left: 20%;
+    box-shadow: pink;
+}
+h1{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 250%;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    margin: 0;
+    text-align: justify;
+    transition: all 0.3s
+}
+
+#Question{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 150%;
+    position: relative;
+    top: 37%;
+    right: 25%;
+    text-align: right;
+    margin: 0;
+}
+.nav{
+    float:right;
+    display:inline-block;
+    position: relative;
+    top: 50%;
+    right: 25%;
+}
+.link{
+  text-decoration: none;
+  color: aliceblue;
+  background-color: palevioletred;
+  margin:0 15px;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-family: 'Waiting for the Sunrise', cursive;
+  align-items: center;
+  box-shadow: -5px 5px 10px -10px saddlebrown, 5px -5px 5px -5px  saddlebrown inset;
+  transition: 0.2s;
+}
+.link:hover{
+ background-color: rgb(255, 122, 144);
+}
+.link:active{
+ background-color: pink;
+ text-emphasis-style: bold;
+}
+
+.Greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+#G1{
+   margin: 0;
+   padding:10px;
+   background-color: saddlebrown;
+   color: white;
+}
+.introduction{
+    
+    width: 35%;
+    height: auto;
+    font-size: 15px;
+    color:white;
+    background-color: rgba(255, 252, 46, 0.522);
+    border-radius: 10%;
+    box-shadow: 0 5px 10px 0 saddlebrown, 0 5px 10px 0 saddlebrown ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intros{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 16px;
+    align-self: center;
+    font-size: larger;
+    height: 15px;
+    font-family: 'Waiting for the Sunrise', cursive;
+    background-color: palevioletred;
+    display:inline-block;
+    border-radius: 5px;
+    border-width:10px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: -5px 5px 10px -10px saddlebrown, 5px -5px 5px -5px  saddlebrown inset;   
+}
+#Hi{
+    background-color: saddlebrown;
+    color:White ;
+    font-family: 'Waiting for the Sunrise', cursive;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align:center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0p;
+    border-top: dotted 5px black;
+    border-right: dotted 5px black;
+    border-left: dotted 5px black;
+    border-bottom: dotted 5px black;
+}
+.Gallery{
+    
+    font-size: 15px;
+    border-radius: 10%;
+    box-shadow: 0 5px 10px 0 saddlebrown, 0 5px 10px 0 saddlebrown ;
+    width: 35%;
+    height: auto;
+    border: 2px solid saddlebrown;
+    background-color: pink;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.pictures{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.introduction, .Gallery {
+    margin: 20px; 
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .Container {
+        height: auto;
+    }
+
+    #Jade {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Greetings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction,
+    .Gallery {
+        width: 75%;
+    }
+
+    .nav {
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 16px;
+        position: static;
+        top: auto;
+        right: auto;
+        font-size: 18px;
+        margin-top: 10px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    #Question{
+        text-align: center;
+        position: static;
+        top: auto;
+        right: auto;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    h1 {
+        padding-top: 20%;
+        text-align: center;
+        position: static;
+        top: auto; 
+        right: auto; 
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+        .Container {
+            height: auto;
+        }
+    
+        #Jade {
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .Greetings {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .introduction,
+        .Gallery {
+            width: 90%;
+        }
+    
+        .nav {
+            display: flex;
+            align-items: center;
+            flex-wrap:wrap;
+            margin-top: 20px;
+            font-size: 16px;
+            padding-bottom: 10%;
+        }
+    
+        .nav a {
+            font-size: 10px;
+            
+        }
+    
+        
+        h1 {
+            text-align: center;
+            position: relative; 
+            padding-top: 20%; 
+            font-size: 18px; 
+            margin-top: 10px; 
+        }
+    }
+}
