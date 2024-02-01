@@ -1434,3 +1434,70 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+
+
+
+#music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #FFFFFF80;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+#music-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#music-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-right: 20px;
+}
+
+#music-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#controls button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#controls button:hover {
+  background-color: #f0f0f0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #333; /* Icon color */
+}
+
+/* Styles for individual icons */
+.previous-icon {
+  transform: scaleX(-1); /* Flip horizontally for backward icon */
+}
+
+

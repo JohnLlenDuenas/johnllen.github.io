@@ -11,17 +11,46 @@
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Rk4kgbc4eEkdaD6S6ZjPhxnU9HWyqeqeUQ+Rz/z6z3qmWTfaTlqmKAzzPXZ+6u2oUlVbMZIuSJtQ9nH19p0x2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+  <div id="music-player">
+    <div id="music-info">
+      <img id="music-picture" src="music.jpg" alt="Music Picture">
+      <h3 id="music-title">Song Title</h3>
+    </div>
+    <div id="controls">
+      <button id="previous">
+        <svg class="icon next-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </button>
+      
+      <button id="play-pause">
+        <svg class="icon pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </button>
+      <button id="next">
+        <svg class="icon previous-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
@@ -874,7 +903,8 @@
     </div>
   </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
+  
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

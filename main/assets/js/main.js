@@ -207,5 +207,113 @@
       preloader.remove()
     });
   }
+  
 
+// Get references to elements
+const musicPlayer = document.getElementById('music-player');
+const musicTitle = document.getElementById('music-title');
+const musicPicture = document.getElementById('music-picture');
+const playPauseButton = document.getElementById('play-pause');
+const previousButton = document.getElementById('previous');
+const nextButton = document.getElementById('next');
+
+// Define your music data
+const songs = [
+  {
+    title: 'You got it All',
+    picture: 'songs/song6.jpg',
+    audio: 'songs/song6.mp3'
+  },
+  {
+    title: 'B.A.D.',
+    picture: 'songs/song1.jpg',
+    audio: 'songs/song1.mp3'
+  },
+  {
+    title: 'Take Da Charge',
+    picture: 'songs/song2.jpg',
+    audio: 'songs/song2.mp3'
+  },
+  {
+    title: 'No Sleep',
+    picture: 'songs/song3.jpg',
+    audio: 'songs/song3.mp3'
+  },
+  {
+    title: 'Cold Heart',
+    picture: 'songs/song4.jpg',
+    audio: 'songs/song4.mp3'
+  },
+  {
+    title: 'No Man',
+    picture: 'songs/song5.jpg',
+    audio: 'songs/song5.mp3'
+  },
+  {
+    title: 'Easy',
+    picture: 'songs/song7.jpg',
+    audio: 'songs/song7.mp3'
+  },
+];
+
+let currentSongIndex = 0;
+let isPlaying = false;
+let audio = new Audio();
+
+// Initialize the player with the first song
+initPlayer();
+
+// Function to initialize the music player with the current song
+function initPlayer() {
+  musicTitle.textContent = songs[currentSongIndex].title;
+  musicPicture.src = songs[currentSongIndex].picture;
+  audio.src = songs[currentSongIndex].audio;
+}
+
+// Function to play or pause the audio
+function togglePlayPause() {
+  if (isPlaying) {
+    audio.pause();
+  } else {
+    audio.play();
+  }
+  isPlaying = !isPlaying;
+  updatePlayPauseButton();
+}
+
+// Function to update the play/pause button icon
+
+
+// Function to play the previous song
+function playPreviousSong() {
+  currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+  initPlayer();
+  if (isPlaying) {
+    audio.play();
+  }
+}
+
+// Function to play the next song
+function playNextSong() {
+  currentSongIndex = (currentSongIndex + 1) % songs.length;
+  initPlayer();
+  if (isPlaying) {
+    audio.play();
+  }
+}
+
+// Event listeners for buttons
+playPauseButton.addEventListener('click', togglePlayPause);
+previousButton.addEventListener('click', playPreviousSong);
+nextButton.addEventListener('click', playNextSong);
+
+// Event listener to toggle play/pause when audio ends
+audio.addEventListener('ended', () => {
+  isPlaying = false;
+  updatePlayPauseButton();
+});
+
+  
 })()
+
+
