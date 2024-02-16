@@ -221,8 +221,8 @@ const nextButton = document.getElementById('next');
 const songs = [
   {
     title: 'You got it All',
-    picture: 'songs/song6.jpg',
-    audio: 'songs/song6.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song6.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song6.mp3'
   },
   {
     title: 'B.A.D.',
@@ -231,28 +231,28 @@ const songs = [
   },
   {
     title: 'Take Da Charge',
-    picture: 'songs/song2.jpg',
-    audio: 'songs/song2.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song2.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song2.mp3'
   },
   {
     title: 'No Sleep',
-    picture: 'songs/song3.jpg',
-    audio: 'songs/song3.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song3.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song3.mp3'
   },
   {
     title: 'Cold Heart',
-    picture: 'songs/song4.jpg',
-    audio: 'songs/song4.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song4.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song4.mp3'
   },
   {
     title: 'No Man',
-    picture: 'songs/song5.jpg',
-    audio: 'songs/song5.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song5.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song5.mp3'
   },
   {
     title: 'Easy',
-    picture: 'songs/song7.jpg',
-    audio: 'songs/song7.mp3'
+    picture: 'https://johnllenduenas.github.io/main/songs/song7.jpg',
+    audio: 'https://johnllenduenas.github.io/main/songs/song7.mp3'
   },
 ];
 
