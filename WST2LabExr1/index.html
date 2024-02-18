@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Rk4kgbc4eEkdaD6S6ZjPhxnU9HWyqeqeUQ+Rz/z6z3qmWTfaTlqmKAzzPXZ+6u2oUlVbMZIuSJtQ9nH19p0x2Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://johnllenduenas.github.io/main/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://johnllenduenas.github.io/main/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://johnllenduenas.github.io/main/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="https://johnllenduenas.github.io/main/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="https://johnllenduenas.github.io/main/assets/css/style.css" rel="stylesheet">
   
   </head>
@@ -22,6 +20,7 @@
       </div>
     </header>
     <main id="main">
+      
       <section id="about" class="about-mf sect-pt4 route">
         <div class="container">
           <div class="row">
@@ -33,8 +32,26 @@
                     </h5>
                   </div>
                 <div class="row">
-                    <form  method="post" role="form" class="php-email-form">
+                    <form  id="form1" method="post" role="form" class="php-email-form">
                         <div class="row">
+                          
+                            <div class="form-group">
+                              <div id="overlay" style="display: none;">
+                                <div id="overlayContent">
+                                  <video id="displayVideo" style="max-width: 100%;" autoplay>
+                                    <source src="Enrollment.mp4" type="video/mp4">
+                                </video>
+                                <br><br><br>
+                                </div>
+                              </div>
+                              <div id="overlay2" style="display: block;">
+                                <div id="overlayContent">
+                                  <img id="displayPicture" src="Thumbnail.PNG" style="max-width: 100%;" alt="Picture">
+                                <br><br><br>
+                                </div>
+                              </div>
+                            </div>
+                          
 
                             <div class="col-md-6">
                                 <div class="col-md-12 mb-3">
@@ -83,7 +100,7 @@
                             </div>
                           <div class="col-md-6">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="button button-a button-big button-rouded">Submit</button>
+                                <button type="button"id="submitButton1" class="button button-a button-big button-rouded">Submit</button>
                             </div>
                           </div>
                           <div class="col-md-6">
@@ -111,13 +128,13 @@
                       </h5>
                     </div>
                   <div class="row">
-                      <form  method="post" role="form" class="php-email-form">
+                      <form id="form2" method="post" role="form" class="php-email-form">
                           <div class="row">
-  
+                              
                               <div class="col-md-6">
                                   <div class="col-md-12 mb-3">
                                       <div class="form-group">
-                                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                                          <input type="text" name="name2" class="form-control" id="name2" placeholder="Your Name" required="">
                                       </div>
                                   </div>
                               </div>
@@ -160,7 +177,7 @@
 
 
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="button button-a button-big button-rouded">Submit</button>
+                                <button type="button"  id="submitButton2" class="button button-a button-big button-rouded">Submit</button>
                             </div>
                           </div>
                       </form>
@@ -190,11 +207,17 @@
         </div>
       </div>
     </footer>
-    <script src="https://johnllenduenas.github.io/main/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://johnllenduenas.github.io/main/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="https://johnllenduenas.github.io/main/assets/vendor/purecounter/purecounter.js"></script>
-    <script src="https://johnllenduenas.github.io/main/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="https://johnllenduenas.github.io/main/assets/vendor/typed.js/typed.min.js"></script>
+    <audio id="backgroundAudio" src="Thanks.mp3" preload="auto"></audio>
+
+    <script>
+      
+    
+
+
+      
+    </script>
+    
     <script src="https://johnllenduenas.github.io/main/assets/js/main.js"></script>
+    <script src="web.js"></script>
     
 </body></html>
