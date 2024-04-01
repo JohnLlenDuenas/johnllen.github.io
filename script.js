@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
     let speed = 100;
 
-    /*  SCENE 1 */
+
     let scene1 = gsap.timeline();
     ScrollTrigger.create({
         animation: scene1,
@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
         scrub: 3,
     });
 
-    // hills animation 
     scene1.to("#h1-1", { y: 3 * speed, x: 1 * speed, scale: 0.9, ease: "power1.in" }, 0)
     scene1.to("#h1-2", { y: 2.6 * speed, x: -0.6 * speed, ease: "power1.in" }, 0)
     scene1.to("#h1-3", { y: 1.7 * speed, x: 1.2 * speed }, 0.03)
@@ -22,12 +21,11 @@ gsap.registerPlugin(ScrollTrigger);
     scene1.to("#h1-8", { y: 3.5 * speed, x: 0.2 * speed }, 0)
     scene1.to("#h1-9", { y: 3.5 * speed, x: -0.2 * speed }, 0)
 
-    //animate text
     scene1.to("#info", { y: 8 * speed }, 0)
 
 
 
-    /*   Bird   */
+
     gsap.fromTo("#bird", { opacity: 1 }, {
         y: -250,
         x: 800,
@@ -43,7 +41,6 @@ gsap.registerPlugin(ScrollTrigger);
     })
 
 
-    /* Clouds  */
     let clouds = gsap.timeline();
     ScrollTrigger.create({
         animation: clouds,
@@ -60,7 +57,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-    /* Sun motion Animation  */
     let sun = gsap.timeline();
     ScrollTrigger.create({
         animation: sun,
@@ -70,10 +66,9 @@ gsap.registerPlugin(ScrollTrigger);
         scrub: 1,
     });
 
-    //sun motion 
     sun.to("#bg_grad", { attr: { cy: "330" } }, 0.00)
 
-    //bg change
+
     sun.to("#sun", { attr: { offset: "0.15" } }, 0.00)
     sun.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0.15" } }, 0.00)
     sun.to("#bg_grad stop:nth-child(3)", { attr: { offset: "0.18" } }, 0.00)
@@ -83,7 +78,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-    /*   SCENE 2  */
     let scene2 = gsap.timeline();
     ScrollTrigger.create({
         animation: scene2,
@@ -102,7 +96,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-    /* Bats */
     gsap.fromTo("#bats", { opacity: 1, y: 400, scale: 0 }, {
         y: 120,
         scale: 0.8,
@@ -124,7 +117,6 @@ gsap.registerPlugin(ScrollTrigger);
     })
 
 
-    /* Sun increase */
     let sun2 = gsap.timeline();
     ScrollTrigger.create({
         animation: sun2,
@@ -143,7 +135,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-    /* Transition (from Scene2 to Scene3) */
     gsap.set("#scene3", { y: 580, visibility: "visible" })
     let sceneTransition = gsap.timeline();
     ScrollTrigger.create({
@@ -160,7 +151,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-    /* Scene 3 */
+
     let scene3 = gsap.timeline();
     ScrollTrigger.create({
         animation: scene3,
@@ -170,26 +161,23 @@ gsap.registerPlugin(ScrollTrigger);
         scrub: 3,
     });
 
-    //Hills motion
+
     scene3.fromTo("#h3-1", { y: 300 }, { y: -550 }, 0)
     scene3.fromTo("#h3-2", { y: 800 }, { y: -550 }, 0.03)
     scene3.fromTo("#h3-3", { y: 600 }, { y: -550 }, 0.06)
     scene3.fromTo("#h3-4", { y: 800 }, { y: -550 }, 0.09)
     scene3.fromTo("#h3-5", { y: 1000 }, { y: -550 }, 0.12)
 
-    //stars
+
     scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0)
 
-    // Scroll Back text
     scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25)
     scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3)
 
-    //gradient value change
     scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0)
     scene3.to("#bg2-grad", { attr: { r: 500 } }, 0)
 
 
-    /*   falling star   */
     gsap.to("#fstar", {
         x: -700,
         y: -250,
@@ -205,7 +193,6 @@ gsap.registerPlugin(ScrollTrigger);
     })
 
 
-    //reset scrollbar position after refresh
     window.onbeforeunload = function() {
         window.scrollTo(0, 0);
     }
