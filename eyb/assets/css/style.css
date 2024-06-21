@@ -312,7 +312,7 @@ a:hover {
   border-radius: 50%;
 }
 .scrollable-container {
-  max-height: 45rem;
+  max-height: 45%;
   overflow: auto;
 }
 /*--------------------------------------------------------------
