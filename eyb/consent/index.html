@@ -23,31 +23,27 @@
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
 
 
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
       <h1 class="logo"><img src="../assets/img/mlndy logo.png"><a href="../index.html" style="font-size: 75%;">     MALANDAY NATIONAL HIGHSCHOOL E-YEARBOOK</a></h1>
-
-      
-
     </div>
   </header>
 
-<main class="fixed-top">
-  <div id="hero" class="hero route bg-image " style="background-image: url(../assets/img/hero-bg.jpg)">
+
+  <div id="hero" class="hero route bg-image " style="background-image: url(../assets/img/hero-bg.jpg)" >
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <section id="about" class="about-mf sect-pt4 route">
+          <section id="about" class="about-mf sect-pt4 route" >
             <div class="container">
               <div class="row">
-                <div class="col-sm-12">
-                  <div class="box-shadow-full scrollable-container" style="margin-top: 7%;">
+                <div class="col-sm-12 " style="margin-top: 7%; ">
+                  <div class="box-shadow-full margs scrollable-container " >
                     <h2 >
                       Parent/Guardian Consent Form for Online Yearbook and Social Media Sharing<br><br>
                     </h2>
@@ -140,44 +136,7 @@
       </div>
     </div>
   </div>
-
-  
 </div>
-
-</main>
-  
-
-  <script>
-    $(function () {
-        $('.php-email-form').on('submit', function (e) {
-            e.preventDefault();
-            
-            var form = $(this);
-            var formData = form.serialize();
-            
-            $.ajax({
-                type: 'POST',
-                url: form.attr('action'),
-                data: formData,
-                beforeSend: function () {
-                    form.find('.loading').show();
-                    form.find('.error-message').hide();
-                    form.find('.sent-message').hide();
-                },
-                success: function (response) {
-                    form.find('.loading').hide();
-                    form.find('.sent-message').show();
-                },
-                error: function (response) {
-                    form.find('.loading').hide();
-                    form.find('.error-message').show().text(response.responseText);
-                }
-            });
-        });
-    });
-    </script>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
