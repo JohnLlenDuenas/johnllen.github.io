@@ -140,6 +140,7 @@
     }
   });
 
+  
   /**
    * Intro type effect
    */

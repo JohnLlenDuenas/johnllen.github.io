@@ -311,7 +311,10 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-
+.scrollable-container {
+  max-height: 45rem;
+  overflow: auto;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
